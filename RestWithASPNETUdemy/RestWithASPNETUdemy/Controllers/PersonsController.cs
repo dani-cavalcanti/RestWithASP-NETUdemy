@@ -9,18 +9,27 @@ using RestWithASPNETUdemy.Services;
 
 namespace RestWithASPNETUdemy.Controllers
 {
+    /* Mapeia as requisições de http://localhost:{porta}/api/persons/
+     Por padrão o ASP.NET Core mapeia todas as classes que extendem Controller
+    pegando a primeira parte do nome da Classe em lower case [Person]Controller
+    e expõe como endpoint REST
+     */
     [ApiController]
     [Route("api/[controller]")]
     public class PersonsController : Controller
     {
+        //Declaração do serviço usado
         private IPersonService _personService;
 
+        /*Injeção de uma intância de IPersonService ao criar
+         uma instância de PersonController */
         public PersonsController(IPersonService personService)
         {
             _personService = personService;
         }
 
-        // GET api/values
+        //Mapeia as requisições GET para http://localhost:{porta}/api/persons/
+        // GET sem parâmetros para o Findall --> Busca Todos
         [HttpGet]
         public IActionResult Get()
         {
