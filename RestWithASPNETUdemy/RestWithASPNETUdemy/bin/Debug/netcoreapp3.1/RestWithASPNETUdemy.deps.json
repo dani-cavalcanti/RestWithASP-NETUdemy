@@ -26,6 +26,8 @@
         "dependencies": {
           "DocumentFormat.OpenXml": "2.11.3",
           "EntityFramework": "6.4.4",
+          "Evolve": "2.4.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.1.1",
           "Pomelo.EntityFrameworkCore.MySql": "3.2.2",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -339,6 +341,28 @@
         "compile": {
           "lib/netstandard2.1/EntityFramework.SqlServer.dll": {},
           "lib/netstandard2.1/EntityFramework.dll": {}
+        }
+      },
+      "Evolve/2.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/Evolve.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Evolve.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/4.1.1": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.7301.35616"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2433,6 +2457,20 @@
       "sha512": "sha512-yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "path": "entityframework/6.4.4",
       "hashPath": "entityframework.6.4.4.nupkg.sha512"
+    },
+    "Evolve/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nwdDvHtHy8XfLiN/mwpdcX/GpcEC6iMM8Rrbw2faqU48C6DgY8JHLA7OPaKTsUypjH4LMI3ctMhMDRBJCp5T7g==",
+      "path": "evolve/2.4.0",
+      "hashPath": "evolve.2.4.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ioFhRz5gm2Ny+t758Jab638eTG8Uui++klcH00EgBuU/BQbjkbFY+9xw/CkoAChIcrJsoQP2NKDYJ09zN5jR0g==",
+      "path": "microsoft.aspnetcore.mvc.versioning/4.1.1",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
