@@ -59,6 +59,15 @@
           "lib/netstandard2.0/Evolve.dll": {}
         }
       },
+      "EvolveSharp/0.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/EvolveSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net40/EvolveSharp.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -2181,6 +2190,18 @@
         "lib/net461/Evolve.pdb",
         "lib/netstandard2.0/Evolve.dll",
         "lib/netstandard2.0/Evolve.pdb"
+      ]
+    },
+    "EvolveSharp/0.8.1": {
+      "sha512": "NRAVnjljNxu9TU5cJJLwbPlaQ9U5hAcTGr7YT93M3o0Pq0+ODf24SMtO92IZd8Yce2HrXSeM/HoAvngx+9raWQ==",
+      "type": "package",
+      "path": "evolvesharp/0.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "evolvesharp.0.8.1.nupkg.sha512",
+        "evolvesharp.nuspec",
+        "lib/net40/EvolveSharp.dll"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -7107,6 +7128,7 @@
       "DocumentFormat.OpenXml >= 2.11.3",
       "EntityFramework >= 6.4.4",
       "Evolve >= 2.4.0",
+      "EvolveSharp >= 0.8.1",
       "Microsoft.AspNetCore.Mvc.Versioning >= 4.1.1",
       "MySql.Data >= 8.0.21",
       "Pomelo.EntityFrameworkCore.MySql >= 3.2.2"
@@ -7162,6 +7184,10 @@
             "target": "Package",
             "version": "[2.4.0, )"
           },
+          "EvolveSharp": {
+            "target": "Package",
+            "version": "[0.8.1, )"
+          },
           "Microsoft.AspNetCore.Mvc.Versioning": {
             "target": "Package",
             "version": "[4.1.1, )"
@@ -7196,5 +7222,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'EvolveSharp 0.8.1' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "EvolveSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

@@ -17,16 +17,20 @@ using RestWithASPNETUdemy.Business.Implementations;
 using RestWithASPNETUdemy.Repository;
 using RestWithASPNETUdemy.Repository.Implementations;
 
+
 namespace RestWithASPNETUdemy
 {
     public class Startup
     {
         public readonly ILogger _logger;
         public IConfiguration _configuration { get; set; }
-        public Startup(IConfiguration configuration,  ILogger<Startup> logger)
+        public IHostEnvironment _environment { get; set; }
+
+        public Startup(IConfiguration configuration,  ILogger<Startup> logger, IHostEnvironment environment)
         {
             _configuration = configuration;
             _logger = logger;
+            _environment = environment;
         }
 
         public IConfiguration Configuration { get; }
@@ -37,6 +41,25 @@ namespace RestWithASPNETUdemy
             var connectionString = _configuration["MySqlConnection:MySqlConnectionString"];
             services.AddDbContext<MySQLContext>(options => options.UseMySql(connectionString));
 
+            if (_environment.IsDevelopment())
+            {
+                try
+                {
+                    var evolveConnection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+
+                    var evolve = new Evolve.Evolve( evolveConnection, msg => _logger.LogInformation(msg))
+                    {
+                        Locations = new List<string> {'db/migrations'},
+                        IsEraseDisabled = true,
+                    };
+                    evolve.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical("Database migration failed.", ex);
+                    throw;
+                }
+            }
             services.AddMvc();
 
             services.AddApiVersioning();

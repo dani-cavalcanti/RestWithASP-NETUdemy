@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4zLfhhbqgwwB9TsGWqgv/nSnlV8ggdVtPrmQz7/nTeQuMhxr9dfBtZSWqdKIj4L+qC5AIYd7vzY+998RDScHvQ==",
+  "dgSpecHash": "UXaTtbKuYZMxZ1xY3nTyyI/MdoX96y4iwrmwgg6rAyl0MeT52q2tlBTX3Nk7ywC/NpovzrrZ5g7ysCSAt1LT7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\danielle.coelho\\Desktop\\ProjetoUdemy\\RestWithASP-NETUdemy\\RestWithASPNETUdemy\\RestWithASPNETUdemy\\RestWithASPNETUdemy.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\documentformat.openxml\\2.11.3\\documentformat.openxml.2.11.3.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\evolve\\2.4.0\\evolve.2.4.0.nupkg.sha512",
+    "C:\\Users\\danielle.coelho\\.nuget\\packages\\evolvesharp\\0.8.1\\evolvesharp.0.8.1.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
@@ -140,5 +141,16 @@
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
     "C:\\Users\\danielle.coelho\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.0.1\\system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'EvolveSharp 0.8.1' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "EvolveSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

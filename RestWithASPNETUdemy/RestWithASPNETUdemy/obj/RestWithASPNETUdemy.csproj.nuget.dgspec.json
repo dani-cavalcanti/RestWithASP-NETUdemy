@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[2.4.0, )"
             },
+            "EvolveSharp": {
+              "target": "Package",
+              "version": "[0.8.1, )"
+            },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
               "version": "[4.1.1, )"
